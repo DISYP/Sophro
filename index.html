@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karine Roman - Sophrology Practice</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Karine Roman - Sophrologue</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Karine Roman's Sophrology Practice</h1>
+        <h1>Karine Roman</h1>
+        <h2>Sophrologue</h2>
+        <p>Brive-la-Gaillarde, Corrèze</p>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>What is Sophrology?</h2>
-            <p>Sophrology is a relaxing and dynamic practice designed to help individuals manage stress and enhance well-being.</p>
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Bienvenue sur le site de Karine Roman, sophrologue spécialisée dans l’accompagnement vers le bien-être. 
+            Avec des techniques douces et efficaces, je vous aide à atteindre votre équilibre intérieur.</p>
         </section>
-        <section>
-            <h2>Services Offered</h2>
+        <section id="services">
+            <h2>Services</h2>
             <ul>
-                <li>Individual Sessions</li>
-                <li>Group Workshops</li>
-                <li>Corporate Well-being Programs</li>
+                <li>Séances individuelles</li>
+                <li>Ateliers de groupe</li>
+                <li>Accompagnement en entreprise</li>
             </ul>
         </section>
-        <section>
-            <h2>Contact Information</h2>
-            <p>For inquiries, please email: <a href="mailto:karine.roman@example.com">karine.roman@example.com</a></p>
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Découvrez des articles inspirants sur la sophrologie et le bien-être.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="mailto:didier.strahlheim@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Karine Roman. All rights reserved.</p>
+        <p>&copy; 2026 Karine Roman. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
