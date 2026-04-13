@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de Karine Roman, sophrologue à Brive-la-Gaillarde. Articles sur la sophrologie, le bien-être, la gestion du stress, le sommeil et la relaxation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog Bien-être & Sophrologie – Karine Roman</title>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="container">
+            <a href="index.html" class="navbar-brand" aria-label="Accueil Karine Roman Sophrologue">
+                <span class="brand-name">Karine Roman</span>
+                <span class="brand-tagline">Sophrologue</span>
+            </a>
+            <button class="navbar-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-menu" id="navMenu" role="menubar">
+                <li><a href="index.html" role="menuitem">Accueil</a></li>
+                <li><a href="services.html" role="menuitem">Services</a></li>
+                <li><a href="about.html" role="menuitem">À propos</a></li>
+                <li><a href="blog.html" class="active" role="menuitem">Blog</a></li>
+                <li><a href="contact.html" class="btn-nav" role="menuitem">Prendre RDV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero" role="banner">
+        <div class="container">
+            <span class="section-label">Blog</span>
+            <h1>Bien-être &amp; Sophrologie</h1>
+            <p>Conseils pratiques, techniques de relaxation et articles inspirants pour cultiver votre bien-être au quotidien.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" aria-labelledby="blog-heading">
+            <div class="container">
+                <!-- Article featured -->
+                <div class="blog-featured animate-up" aria-label="Article à la une">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" 
+                         alt="Montagne et sérénité - techniques de respiration consciente" 
+                         loading="lazy">
+                    <div class="blog-featured-body">
+                        <span class="blog-tag">À la une</span>
+                        <h2 id="blog-heading">Les bienfaits de la respiration consciente</h2>
+                        <p>La respiration est bien plus qu'une fonction automatique. Pratiquée avec conscience, elle devient un outil puissant pour réduire le stress, améliorer la concentration et retrouver votre calme intérieur en quelques minutes seulement.</p>
+                        <div class="blog-card-meta" style="margin:1rem 0;">
+                            <span>📅</span> <span>28 février 2025</span> · <span>4 min de lecture</span>
+                        </div>
+                        <a href="#article-respiration" class="btn btn-primary">Lire l'article complet</a>
+                    </div>
+                </div>
+
+                <!-- Articles grid -->
+                <div class="blog-grid">
+                    <article class="blog-card animate-up delay-1">
+                        <div class="blog-card-img-wrap">
+                            <img class="blog-card-img" 
+                                 src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=600&q=80" 
+                                 alt="Améliorer son sommeil grâce à la sophrologie" 
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Sommeil</span>
+                            <h3>Améliorer votre sommeil avec la sophrologie</h3>
+                            <p>Le sommeil est essentiel pour notre bien-être. Découvrez les quatre techniques sophrologique clés pour retrouver des nuits reposantes et un endormissement serein.</p>
+                            <div class="blog-card-meta">
+                                <span>📅</span> <span>15 mars 2025</span> · <span>5 min</span>
+                            </div>
+                            <a href="#article-sommeil" class="blog-read-more">Lire l'article →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-up delay-2">
+                        <div class="blog-card-img-wrap">
+                            <img class="blog-card-img" 
+                                 src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80" 
+                                 alt="Confiance en soi et sophrologie" 
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Confiance en soi</span>
+                            <h3>Renforcer sa confiance en soi grâce à la sophrologie</h3>
+                            <p>La confiance en soi est une compétence qui se développe et se renforce avec la pratique. Voici comment la sophrologie peut vous aider à vous affirmer.</p>
+                            <div class="blog-card-meta">
+                                <span>📅</span> <span>10 janvier 2025</span> · <span>6 min</span>
+                            </div>
+                            <a href="#article-confiance" class="blog-read-more">Lire l'article →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-up delay-3">
+                        <div class="blog-card-img-wrap">
+                            <img class="blog-card-img" 
+                                 src="https://images.unsplash.com/photo-1571019613914-85f342c6a11e?w=600&q=80" 
+                                 alt="Sophrologie et gestion du stress au travail" 
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Stress</span>
+                            <h3>5 techniques pour gérer le stress au quotidien</h3>
+                            <p>Le stress fait partie de la vie moderne. Mais il ne doit pas vous envahir. Voici 5 techniques simples issues de la sophrologie pour le gérer efficacement.</p>
+                            <div class="blog-card-meta">
+                                <span>📅</span> <span>5 décembre 2024</span> · <span>5 min</span>
+                            </div>
+                            <a href="#article-stress" class="blog-read-more">Lire l'article →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-up delay-1">
+                        <div class="blog-card-img-wrap">
+                            <img class="blog-card-img" 
+                                 src="https://images.unsplash.com/photo-1545389336-cf090694435e?w=600&q=80" 
+                                 alt="Sophrologie pour les examens et la performance" 
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Performance</span>
+                            <h3>Réussir ses examens avec la sophrologie</h3>
+                            <p>Anxiété des examens, trou de mémoire, stress de la performance… La sophrologie offre des outils concrets pour préparer vos épreuves avec sérénité.</p>
+                            <div class="blog-card-meta">
+                                <span>📅</span> <span>18 novembre 2024</span> · <span>7 min</span>
+                            </div>
+                            <a href="#article-examens" class="blog-read-more">Lire l'article →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-up delay-2">
+                        <div class="blog-card-img-wrap">
+                            <img class="blog-card-img" 
+                                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" 
+                                 alt="Sophrologie en entreprise et bien-être au travail" 
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Entreprise</span>
+                            <h3>La sophrologie au service du bien-être en entreprise</h3>
+                            <p>De plus en plus d'entreprises intègrent la sophrologie dans leur politique de bien-être. Découvrez comment cette pratique transforme les organisations.</p>
+                            <div class="blog-card-meta">
+                                <span>📅</span> <span>2 octobre 2024</span> · <span>5 min</span>
+                            </div>
+                            <a href="#article-entreprise" class="blog-read-more">Lire l'article →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card animate-up delay-3">
+                        <div class="blog-card-img-wrap">
+                            <img class="blog-card-img" 
+                                 src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&q=80" 
+                                 alt="Sophrologie et méditation, différences et complémentarité" 
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Découverte</span>
+                            <h3>Sophrologie et méditation : quelles différences ?</h3>
+                            <p>Souvent confondues, la sophrologie et la méditation sont deux pratiques distinctes mais complémentaires. Comprendre leurs spécificités pour choisir celle qui vous convient.</p>
+                            <div class="blog-card-meta">
+                                <span>📅</span> <span>14 août 2024</span> · <span>6 min</span>
+                            </div>
+                            <a href="#article-meditation" class="blog-read-more">Lire l'article →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARTICLE COMPLET : Respiration -->
+        <section class="section section-alt" id="article-respiration" aria-labelledby="art-resp-heading">
+            <div class="container">
+                <article class="blog-article animate-up">
+                    <span class="blog-tag">Respiration</span>
+                    <h1 id="art-resp-heading">Les bienfaits de la respiration consciente</h1>
+                    <div class="blog-article-meta">
+                        <span>📅 28 février 2025</span>
+                        <span>·</span>
+                        <span>✍️ Karine Roman</span>
+                        <span>·</span>
+                        <span>⏱ 4 min de lecture</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80" 
+                         alt="Paysage de montagne apaisante - sophrologie et nature"
+                         style="width:100%;height:360px;object-fit:cover;border-radius:var(--radius-lg);margin-bottom:2rem;"
+                         loading="lazy">
+                    <p>La respiration est bien plus qu'une simple fonction automatique de notre organisme. C'est un pont entre notre corps et notre esprit, entre notre système nerveux conscient et autonome. Pratiquée avec intention, elle devient un outil de transformation profonde.</p>
+                    <h2>Réduction du stress et de l'anxiété</h2>
+                    <p>Lorsque nous sommes stressés, notre respiration devient rapide et superficielle, amplifiant le sentiment d'urgence. En pratiquant la respiration consciente, nous activons le système nerveux parasympathique, responsable de la détente et de la récupération.</p>
+                    <p><strong>La technique 4-7-8</strong> est particulièrement efficace : inspirez pendant 4 secondes, retenez votre souffle 7 secondes, puis expirez lentement pendant 8 secondes. Répétez 4 fois. Cette simple pratique peut réduire votre niveau d'anxiété en quelques minutes.</p>
+                    <h2>Amélioration de la concentration</h2>
+                    <p>Une respiration lente et rythmée améliore l'oxygénation du cerveau et favorise un état de présence et de concentration optimal. C'est pour cette raison que de nombreux sportifs de haut niveau et chefs d'entreprise intègrent des exercices respiratoires dans leur routine quotidienne.</p>
+                    <h2>Équilibre émotionnel</h2>
+                    <p>La respiration abdominale profonde stimule le nerf vague, qui joue un rôle central dans la régulation émotionnelle. Quelques respirations profondes peuvent littéralement « rebooter » notre état émotionnel dans les moments difficiles.</p>
+                    <h2>Amélioration du sommeil</h2>
+                    <p>Pratiquer 5 minutes de respiration consciente avant de dormir prépare le corps et l'esprit au repos. Elle abaisse le rythme cardiaque, relâche les tensions musculaires et calme le mental.</p>
+                    <h2>Comment commencer ?</h2>
+                    <p>Commencez simplement : 5 minutes par jour, dans un endroit calme. Posez une main sur votre ventre et sentez-le se soulever à l'inspiration, s'abaisser à l'expiration. C'est tout. Et c'est déjà beaucoup.</p>
+                    <p>Si vous souhaitez approfondir ces techniques et les intégrer dans une pratique sophrologique complète, n'hésitez pas à <a href="contact.html">me contacter</a> pour une première séance.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ARTICLE COMPLET : Sommeil -->
+        <section class="section" id="article-sommeil" aria-labelledby="art-sommeil-heading">
+            <div class="container">
+                <article class="blog-article animate-up">
+                    <span class="blog-tag">Sommeil</span>
+                    <h1 id="art-sommeil-heading">Améliorer votre sommeil avec la sophrologie</h1>
+                    <div class="blog-article-meta">
+                        <span>📅 15 mars 2025</span>
+                        <span>·</span>
+                        <span>✍️ Karine Roman</span>
+                        <span>·</span>
+                        <span>⏱ 5 min de lecture</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=900&q=80" 
+                         alt="Chambre apaisante pour un sommeil serein"
+                         style="width:100%;height:360px;object-fit:cover;border-radius:var(--radius-lg);margin-bottom:2rem;"
+                         loading="lazy">
+                    <p>Le sommeil est essentiel pour notre bien-être physique et mental. Malheureusement, de nombreuses personnes connaissent des difficultés à s'endormir ou à maintenir un sommeil de qualité. La sophrologie offre des solutions naturelles et efficaces.</p>
+                    <h2>1. Relaxation dynamique du soir</h2>
+                    <p>La sophrologie propose des exercices de relaxation dynamique spécifiques au coucher : mouvements doux des membres, rotations douces du cou, relâchement progressif de chaque partie du corps. Ces exercices éliminent les tensions accumulées dans la journée et préparent le corps au repos.</p>
+                    <h2>2. Visualisation positive</h2>
+                    <p>Incorporez des techniques de visualisation dans votre routine du soir. Imaginez un endroit calme et apaisant où vous vous sentez en sécurité : une plage, une forêt, un jardin fleuri. Engagez tous vos sens dans cette visualisation — les sons, les odeurs, les textures — pour plonger dans un état de relaxation profonde.</p>
+                    <h2>3. La respiration du soir</h2>
+                    <p>Une respiration lente et ample avant de dormir active le système nerveux parasympathique et prépare le corps au sommeil. Essayez la cohérence cardiaque : 5 secondes d'inspiration, 5 secondes d'expiration, pendant 5 minutes.</p>
+                    <h2>4. Prise de conscience des sensations corporelles</h2>
+                    <p>Le scan corporel sophrologique consiste à porter votre attention successivement sur chaque partie de votre corps, des pieds jusqu'à la tête, en relâchant consciemment toute tension. Cette technique favorise l'endormissement naturel et améliore la qualité du sommeil.</p>
+                    <h2>Conclusion</h2>
+                    <p>Intégrer ces techniques dans votre routine du soir peut transformer significativement votre sommeil. La régularité est la clé : pratiquez chaque soir pendant au moins 3 semaines pour observer des résultats durables. Besoin d'un accompagnement personnalisé ? <a href="contact.html">Contactez-moi</a>.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section" aria-labelledby="cta-blog-heading">
+            <div class="container">
+                <h2 id="cta-blog-heading">Envie d'aller plus loin ?</h2>
+                <p>Ces techniques vous intéressent ? Découvrez comment la sophrologie peut transformer votre quotidien lors d'une séance individuelle.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-accent">Prendre rendez-vous</a>
+                    <a href="services.html" class="btn btn-outline">Voir les services</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name">Karine Roman</span>
+                    <span class="brand-tagline">Sophrologue</span>
+                    <p>Accompagnement vers le bien-être et l'équilibre intérieur à Brive-la-Gaillarde, Corrèze.</p>
+                    <div class="footer-social" aria-label="Réseaux sociaux">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">in</a>
+                        <a href="#" aria-label="LinkedIn">Li</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services & Tarifs</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Articles récents</h3>
+                    <ul class="footer-links">
+                        <li><a href="blog.html#article-respiration">Les bienfaits de la respiration</a></li>
+                        <li><a href="blog.html#article-sommeil">Améliorer son sommeil</a></li>
+                        <li><a href="blog.html#article-stress">Gérer le stress au quotidien</a></li>
+                        <li><a href="blog.html">Tous les articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Contact</h3>
+                    <address>
+                        <div class="footer-contact-item">
+                            <span class="icon" aria-hidden="true">📍</span>
+                            <span>Brive-la-Gaillarde, Corrèze (19)</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span class="icon" aria-hidden="true">✉️</span>
+                            <a href="mailto:didier.strahlheim@gmail.com">didier.strahlheim@gmail.com</a>
+                        </div>
+                    </address>
+                    <div class="footer-horaires" style="margin-top:1rem;">
+                        <strong style="color:#fff;display:block;margin-bottom:0.5rem;">Horaires</strong>
+                        Lundi – Vendredi : 9h – 19h<br>
+                        Samedi : 9h – 13h<br>
+                        <em style="font-size:0.82rem;opacity:0.7;">Sur rendez-vous uniquement</em>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Karine Roman – Sophrologue. Tous droits réservés.</span>
+                <span>Fait avec ♥ à Brive-la-Gaillarde</span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">↑</button>
+
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const menu = document.getElementById('navMenu');
+        toggle.addEventListener('click', () => {
+            const open = menu.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+
+        const btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.style.opacity = '1';
+                    e.target.style.transform = 'none';
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.animate-up, .animate-left, .animate-right').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

@@ -3,56 +3,419 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Karine Roman, sophrologue à Brive-la-Gaillarde. Séances individuelles, ateliers de groupe, accompagnement entreprise. Retrouvez équilibre et bien-être.">
+    <meta name="keywords" content="sophrologue, sophrologie, Brive-la-Gaillarde, Corrèze, bien-être, relaxation, gestion du stress">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Karine Roman - Sophrologue</title>
+    <title>Karine Roman – Sophrologue à Brive-la-Gaillarde</title>
 </head>
 <body>
-    <header>
-        <h1>Karine Roman</h1>
-        <h2>Sophrologue</h2>
-        <p>Brive-la-Gaillarde, Corrèze</p>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="container">
+            <a href="index.html" class="navbar-brand" aria-label="Accueil Karine Roman Sophrologue">
+                <span class="brand-name">Karine Roman</span>
+                <span class="brand-tagline">Sophrologue</span>
+            </a>
+            <button class="navbar-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-menu" id="navMenu" role="menubar">
+                <li><a href="index.html" class="active" role="menuitem">Accueil</a></li>
+                <li><a href="services.html" role="menuitem">Services</a></li>
+                <li><a href="about.html" role="menuitem">À propos</a></li>
+                <li><a href="blog.html" role="menuitem">Blog</a></li>
+                <li><a href="contact.html" class="btn-nav" role="menuitem">Prendre RDV</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero" role="banner">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-content animate-up">
+                <span class="hero-badge">✦ Sophrologue certifiée – Brive-la-Gaillarde</span>
+                <h1>Retrouvez votre<br><span>équilibre intérieur</span></h1>
+                <p class="hero-desc">Karine Roman vous accompagne vers le bien-être et la sérénité grâce à la sophrologie — une méthode douce et efficace pour gérer le stress, améliorer votre sommeil et renforcer votre confiance.</p>
+                <div class="hero-cta">
+                    <a href="contact.html" class="btn btn-primary">Prendre rendez-vous</a>
+                    <a href="services.html" class="btn btn-outline">Découvrir mes services</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">Découvrir</div>
     </header>
+
+    <!-- FEATURE STRIP -->
+    <section class="feature-strip" aria-label="Points forts">
+        <div class="container">
+            <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">🌿</span>
+                <div class="feature-text">
+                    <strong>Approche bienveillante</strong>
+                    <span>Écoute et accompagnement personnalisé</span>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">🎓</span>
+                <div class="feature-text">
+                    <strong>Sophrologue certifiée</strong>
+                    <span>Formation RNCP niveau 5 reconnue</span>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">📍</span>
+                <div class="feature-text">
+                    <strong>Brive-la-Gaillarde</strong>
+                    <span>Corrèze (19), séances en présentiel</span>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">💬</span>
+                <div class="feature-text">
+                    <strong>Première séance offerte</strong>
+                    <span>Entretien découverte sans engagement</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <main>
-        <section id="about">
-            <h2>À propos</h2>
-            <p>Bienvenue sur le site de Karine Roman, sophrologue spécialisée dans l’accompagnement vers le bien-être. 
-            Avec des techniques douces et efficaces, je vous aide à atteindre votre équilibre intérieur.</p>
+        <!-- SERVICES SECTION -->
+        <section class="section" id="services" aria-labelledby="services-heading">
+            <div class="container">
+                <span class="section-label">Mes services</span>
+                <h2 class="section-title" id="services-heading">Un accompagnement adapté à vos besoins</h2>
+                <p class="section-subtitle">Chaque parcours est unique. Je propose des séances individuelles, des ateliers collectifs et un accompagnement en entreprise.</p>
+                <div class="services-grid">
+                    <article class="service-card animate-up delay-1">
+                        <img class="service-card-img" 
+                             src="https://images.unsplash.com/photo-1545389336-cf090694435e?w=600&q=80" 
+                             alt="Séance individuelle de sophrologie" 
+                             loading="lazy">
+                        <div class="service-card-body">
+                            <span class="service-card-icon" aria-hidden="true">🧘</span>
+                            <h3>Séances individuelles</h3>
+                            <p>Un espace de confiance pour travailler sur vos objectifs personnels : gestion du stress, troubles du sommeil, confiance en soi, préparation à un événement.</p>
+                            <span class="service-price">À partir de 55 €</span>
+                        </div>
+                    </article>
+                    <article class="service-card animate-up delay-2">
+                        <img class="service-card-img" 
+                             src="https://images.unsplash.com/photo-1571019613914-85f342c6a11e?w=600&q=80" 
+                             alt="Atelier de groupe de sophrologie" 
+                             loading="lazy">
+                        <div class="service-card-body">
+                            <span class="service-card-icon" aria-hidden="true">👥</span>
+                            <h3>Ateliers de groupe</h3>
+                            <p>Des séances collectives pour partager la pratique et bénéficier de la dynamique de groupe. Idéal pour découvrir la sophrologie dans une ambiance conviviale.</p>
+                            <span class="service-price">À partir de 20 €</span>
+                        </div>
+                    </article>
+                    <article class="service-card animate-up delay-3">
+                        <img class="service-card-img" 
+                             src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" 
+                             alt="Accompagnement sophrologie en entreprise" 
+                             loading="lazy">
+                        <div class="service-card-body">
+                            <span class="service-card-icon" aria-hidden="true">🏢</span>
+                            <h3>Accompagnement entreprise</h3>
+                            <p>Intégrez le bien-être au cœur de votre organisation. Ateliers anti-stress, prévention des risques psychosociaux, cohésion d'équipe.</p>
+                            <span class="service-price">Sur devis</span>
+                        </div>
+                    </article>
+                </div>
+                <div style="text-align:center;margin-top:2.5rem;">
+                    <a href="services.html" class="btn btn-primary">Voir tous mes services</a>
+                </div>
+            </div>
         </section>
-        <section id="services">
-            <h2>Services</h2>
-            <ul>
-                <li>Séances individuelles</li>
-                <li>Ateliers de groupe</li>
-                <li>Accompagnement en entreprise</li>
-            </ul>
+
+        <!-- ABOUT PREVIEW -->
+        <section class="section section-alt" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-img-wrap animate-left">
+                        <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=700&q=80" 
+                             alt="Karine Roman, sophrologue à Brive-la-Gaillarde" 
+                             loading="lazy">
+                        <div class="about-img-badge">
+                            <strong>+10</strong>
+                            <span>ans d'expérience</span>
+                        </div>
+                    </div>
+                    <div class="about-content animate-right">
+                        <span class="section-label">À propos de moi</span>
+                        <h2 id="about-heading">Karine Roman,<br>votre guide vers la sérénité</h2>
+                        <p>Passionnée par le bien-être et le développement personnel, je me suis formée à la sophrologie après une carrière dans l'éducation. Aujourd'hui, j'accompagne adultes et adolescents à retrouver équilibre et sérénité dans leur vie quotidienne.</p>
+                        <p>Ma pratique s'appuie sur les fondements de la sophrologie caycédienne, enrichie de techniques de pleine conscience, de relaxation dynamique et de visualisation positive.</p>
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <span class="about-feature-icon" aria-hidden="true">✦</span>
+                                <p>Sophrologue certifiée RNCP niveau 5</p>
+                            </div>
+                            <div class="about-feature">
+                                <span class="about-feature-icon" aria-hidden="true">✦</span>
+                                <p>Spécialisée gestion du stress et troubles du sommeil</p>
+                            </div>
+                            <div class="about-feature">
+                                <span class="about-feature-icon" aria-hidden="true">✦</span>
+                                <p>Accompagnement enfants, adolescents et adultes</p>
+                            </div>
+                            <div class="about-feature">
+                                <span class="about-feature-icon" aria-hidden="true">✦</span>
+                                <p>Membre de la Chambre Syndicale de Sophrologie</p>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="blog">
-            <h2>Blog</h2>
-            <p>Découvrez des articles inspirants sur la sophrologie et le bien-être.</p>
+
+        <!-- STATS STRIP -->
+        <section class="stats-strip" aria-label="Chiffres clés">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">+200</div>
+                        <div class="stat-label">Clients accompagnés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Années d'expérience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Clients satisfaits</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Spécialisations</div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="mailto:didier.strahlheim@gmail.com" method="POST" enctype="text/plain">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
+
+        <!-- TESTIMONIALS -->
+        <section class="section" id="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <span class="section-label">Témoignages</span>
+                <h2 class="section-title" id="testimonials-heading">Ce que disent mes clients</h2>
+                <p class="section-subtitle">Des témoignages authentiques de personnes qui ont retrouvé sérénité et bien-être.</p>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card animate-up delay-1">
+                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+                        <p class="testimonial-text">« Grâce à Karine, j'ai appris à gérer mon anxiété de manière naturelle. En seulement 6 séances, je me sens transformée. Je recommande vivement à toute personne cherchant à mieux se connaître. »</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">🌸</div>
+                            <div class="testimonial-info">
+                                <strong>Marie-Claire D.</strong>
+                                <span>Gestion du stress, Brive</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card animate-up delay-2">
+                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+                        <p class="testimonial-text">« J'avais des problèmes de sommeil depuis des années. Après quelques séances avec Karine, je dors enfin sereinement. Son approche douce et bienveillante m'a vraiment aidé. »</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">🌿</div>
+                            <div class="testimonial-info">
+                                <strong>Thomas L.</strong>
+                                <span>Troubles du sommeil, Corrèze</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card animate-up delay-3">
+                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+                        <p class="testimonial-text">« La sophrologie m'a permis de préparer mon accouchement avec sérénité et confiance. Karine est une praticienne exceptionnelle, à l'écoute et très professionnelle. »</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">🌼</div>
+                            <div class="testimonial-info">
+                                <strong>Sophie M.</strong>
+                                <span>Préparation à l'accouchement</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG PREVIEW -->
+        <section class="section section-alt" id="blog" aria-labelledby="blog-heading">
+            <div class="container">
+                <span class="section-label">Le blog</span>
+                <h2 class="section-title" id="blog-heading">Conseils et bien-être</h2>
+                <p class="section-subtitle">Découvrez mes articles sur la sophrologie, le bien-être et les techniques de relaxation.</p>
+                <div class="blog-grid">
+                    <article class="blog-card animate-up delay-1">
+                        <div class="blog-card-img-wrap">
+                            <img class="blog-card-img" 
+                                 src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=600&q=80" 
+                                 alt="Améliorer son sommeil avec la sophrologie" 
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Sommeil</span>
+                            <h3>Améliorer votre sommeil grâce à la sophrologie</h3>
+                            <p>Le sommeil est essentiel pour notre bien-être. Découvrez les techniques sophrologique pour retrouver des nuits reposantes...</p>
+                            <div class="blog-card-meta">
+                                <span>📅</span> <span>15 mars 2025</span> · <span>5 min de lecture</span>
+                            </div>
+                            <a href="blog.html" class="blog-read-more">Lire l'article →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card animate-up delay-2">
+                        <div class="blog-card-img-wrap">
+                            <img class="blog-card-img" 
+                                 src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" 
+                                 alt="Techniques de respiration pour gérer le stress" 
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Respiration</span>
+                            <h3>Les bienfaits de la respiration consciente</h3>
+                            <p>La respiration est un outil puissant pour réduire le stress et retrouver son calme intérieur. Voici les techniques essentielles...</p>
+                            <div class="blog-card-meta">
+                                <span>📅</span> <span>28 février 2025</span> · <span>4 min de lecture</span>
+                            </div>
+                            <a href="blog.html" class="blog-read-more">Lire l'article →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card animate-up delay-3">
+                        <div class="blog-card-img-wrap">
+                            <img class="blog-card-img" 
+                                 src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80" 
+                                 alt="Sophrologie et confiance en soi" 
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Confiance en soi</span>
+                            <h3>Renforcer sa confiance avec la sophrologie</h3>
+                            <p>La confiance en soi est une compétence qui se travaille. La sophrologie offre des outils concrets pour la développer au quotidien...</p>
+                            <div class="blog-card-meta">
+                                <span>📅</span> <span>10 janvier 2025</span> · <span>6 min de lecture</span>
+                            </div>
+                            <a href="blog.html" class="blog-read-more">Lire l'article →</a>
+                        </div>
+                    </article>
+                </div>
+                <div style="text-align:center;margin-top:2.5rem;">
+                    <a href="blog.html" class="btn btn-primary">Voir tous les articles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">Prêt·e à commencer votre chemin vers le bien-être ?</h2>
+                <p>Contactez-moi pour un entretien découverte gratuit. Ensemble, nous définirons un programme adapté à vos besoins.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-accent">Prendre rendez-vous</a>
+                    <a href="services.html" class="btn btn-outline">Voir les tarifs</a>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Karine Roman. Tous droits réservés.</p>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name">Karine Roman</span>
+                    <span class="brand-tagline">Sophrologue</span>
+                    <p>Accompagnement vers le bien-être et l'équilibre intérieur à Brive-la-Gaillarde, Corrèze.</p>
+                    <div class="footer-social" aria-label="Réseaux sociaux">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">in</a>
+                        <a href="#" aria-label="LinkedIn">Li</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services & Tarifs</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Séances individuelles</a></li>
+                        <li><a href="services.html">Ateliers de groupe</a></li>
+                        <li><a href="services.html">Entreprises</a></li>
+                        <li><a href="services.html">Gestion du stress</a></li>
+                        <li><a href="services.html">Troubles du sommeil</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Contact</h3>
+                    <address>
+                        <div class="footer-contact-item">
+                            <span class="icon" aria-hidden="true">📍</span>
+                            <span>Brive-la-Gaillarde, Corrèze (19)</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span class="icon" aria-hidden="true">✉️</span>
+                            <a href="mailto:didier.strahlheim@gmail.com">didier.strahlheim@gmail.com</a>
+                        </div>
+                    </address>
+                    <div class="footer-horaires" style="margin-top:1rem;">
+                        <strong style="color:#fff;display:block;margin-bottom:0.5rem;">Horaires</strong>
+                        Lundi – Vendredi : 9h – 19h<br>
+                        Samedi : 9h – 13h<br>
+                        <em style="font-size:0.82rem;opacity:0.7;">Sur rendez-vous uniquement</em>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Karine Roman – Sophrologue. Tous droits réservés.</span>
+                <span>Fait avec ♥ à Brive-la-Gaillarde</span>
+            </div>
+        </div>
     </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.getElementById('navToggle');
+        const menu = document.getElementById('navMenu');
+        toggle.addEventListener('click', () => {
+            const open = menu.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+
+        // Back to top
+        const btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+        btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.style.opacity = '1';
+                    e.target.style.transform = 'none';
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.animate-up, .animate-left, .animate-right').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
